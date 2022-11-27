@@ -6,11 +6,11 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/24 14:13:48 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/27 19:10:06 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	= main.c \
+SRCS	= ft_printf.c \
 var_type_int.c \
 var_type_str.c \
 var_type_unsigned_int.c

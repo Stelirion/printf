@@ -6,22 +6,22 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/27 19:10:06 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/28 13:28:36 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	= ft_printf.c \
 var_type_int.c \
 var_type_str.c \
-var_type_unsigned_int.c
+var_type_unsigned.c
 
 OBJS	= ${SRCS:.c=.o}
 
 CC	= cc
 
-HEADERS	= printf.h
+HEADERS	= ft_printf.h
 
-NAME	= printf.a
+NAME	= libftprintf.a
 
 CFLAGS	= -Wall -Wextra -Werror
 

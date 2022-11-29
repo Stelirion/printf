@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 12:30:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/28 18:55:40 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/29 10:38:20 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_printf(const char *str, ...)
 	i = 0;
 	size = 0;
 	va_start(args, str);
+	if (write(1, "", 0) != 0)
+		return (-1);
 	while (str[i])
 	{
 		if (str[i] == '%')

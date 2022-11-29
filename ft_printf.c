@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 12:30:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/29 10:38:20 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/29 10:58:16 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,6 @@ int	ft_printf(const char *str, ...)
 		}
 		i++;
 	}
+	va_end(args);
 	return (size);
 }

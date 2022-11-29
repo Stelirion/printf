@@ -6,14 +6,15 @@
 #    By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/09 13:23:24 by ngennaro          #+#    #+#              #
-#    Updated: 2022/11/28 13:28:36 by ngennaro         ###   ########lyon.fr    #
+#    Updated: 2022/11/28 17:13:44 by ngennaro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS	= ft_printf.c \
 var_type_int.c \
 var_type_str.c \
-var_type_unsigned.c
+var_type_unsigned.c \
+var_type_ptr.c
 
 OBJS	= ${SRCS:.c=.o}
 

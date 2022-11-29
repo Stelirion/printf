@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 12:30:56 by ngennaro          #+#    #+#             */
-/*   Updated: 2022/11/28 13:27:54 by ngennaro         ###   ########lyon.fr   */
+/*   Updated: 2022/11/28 18:55:40 by ngennaro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	sort(char c, va_list args, int size)
 		size += var_type_unsigned(c, (unsigned int)va_arg(args, unsigned int));
 	else if (c == 's')
 		size += var_type_str(c, (char *)va_arg(args, char *));
+	else if (c == 'p')
+		size += var_type_ptr(c, (unsigned long)va_arg(args, unsigned long));
 	else
 	{
 		write (1, &c, 1);
